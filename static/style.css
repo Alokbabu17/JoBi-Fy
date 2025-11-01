@@ -48,3 +48,17 @@ body { font-family: 'Segoe UI', Roboto, Arial; margin:0; background:#f6f1ef; col
   font-family: 'Segoe UI', Roboto, sans-serif;
   letter-spacing: 0.5px;
 }
+.news-ticker1 {
+  background: linear-gradient(90deg, #3b8dff, #7eff7e);
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 60px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-top: 2px solid #004aad;
+  border-bottom: 2px solid #004aad;
+}
+.news-ticker marquee {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.5px;
+}
