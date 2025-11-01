@@ -1,0 +1,50 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('6600674_3334896.jpg') no-repeat center center/cover;
+    filter: blur(1px);  /* 👈 yahan blur control hota hai */
+    z-index: -1;
+}
+body { font-family: 'Segoe UI', Roboto, Arial; margin:0; background:#f6f1ef; color:#111; }
+.topbar { background: linear-gradient(90deg,#ff9a3c,#ddd,#3bbf6b); padding:18px; display:flex; align-items:center; justify-content:space-between; color:rgb(0, 15, 68); }
+.topbar.small { padding:10px 18px; font-size:14px; }
+.brand { margin:0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size:40px; color:rgb(41, 4, 121); letter-spacing:2px; text-shadow: 0px 0px 0 rgb(255, 255, 255); }
+.tag { margin:0; font-style:normal; color:#012; }
+.main-wrap { display:flex; gap:24px; padding:30px; align-items:flex-start; justify-content:center; } 
+.welcome-card { width:48%; }
+.bubble { background:url('bg1.jpg') no-repeat center center; padding:26px; border-radius:18px; color:rgb(6, 6, 6); box-shadow: 18px 18px 0 rgba(230, 208, 208, 0.652); }
+.signin-card { width:340px; background: #fff; padding:20px; border-radius:18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+.login-form label { font-size:12px; margin-top:8px; display:block; color:#0923e9; }
+.login-form input { width:100%; padding:10px; margin:6px 0 10px 0; border-radius:8px; border:1px solid #ddd; }
+.btn { background:#ff0000; color:white; border:none; padding:10px 14px; border-radius:10px; cursor:pointer; text-decoration:none; display:inline-block; }
+.small { margin-top:10px; font-size:13px; color:#2d06f1; }
+.flash { background:#ffe9e9; padding:8px; border-radius:6px; color:#b00; margin-bottom:8px; }
+.feed { padding:20px; max-width:900px; margin:20px auto; }
+.post-card { background:#fff; border-radius:12px; padding:14px; display:flex; justify-content:space-between; margin-bottom:12px; box-shadow:0 6px 18px rgba(0,0,0,0.05); }
+.post-left h3 { margin:0 0 8px 0; }
+.post-left .meta { color:#666; font-size:13px; margin-bottom:8px; }
+.post-right { display:flex; align-items:center; }
+.post-detail { max-width:800px; margin:30px auto; background:#fff; padding:18px; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.06); }
+.actions { margin-top:18px; display:flex; gap:12px; }
+.btn.outline { background:transparent; border:1px solid #04ff36; color:#2d8f6f; }
+.btn.ghost { background:#fa0303; color:#000000; text-decoration:none; padding:8px 12px; border-radius:8px; }
+.center { max-width:420px; margin:60px auto; padding:20px; background:#0073c0; border-radius:10px; text-align:center; }
+/* 🌟 News Ticker Styling */
+.news-ticker {
+  background: linear-gradient(90deg, #3b8dff, #7eff7e);
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 6px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-top: 2px solid #004aad;
+  border-bottom: 2px solid #004aad;
+}
+.news-ticker marquee {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.5px;
+}

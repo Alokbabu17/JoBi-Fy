@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jobify - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar small">
+    <h1>Jobi-Fy</h1>
+    <div class="right">
+      <span>{{ user }}</span> | <a href="/create_post">Add Post</a> | <a href="/logout">Logout</a>
+    </div>
+  </header>
+
+  <div class="feed">
+    {% for p in posts %}
+      <div class="post-card">
+        <div class="post-left">
+          <h3>{{ p['title'] }}</h3>
+          <p class="meta">By <b>{{ p['author'] }}</b> • ₹{{ p['amount'] }}</p>
+          <p>{{ p['description'][:140] }}{% if p['description']|length > 140 %}...{% endif %}</p>
+        </div>
+        <div class="post-right">
+          <a class="btn" href="{{ url_for('post_detail', post_id=p['id']) }}">View</a>
+        </div>
+      </div>
+    {% else %}
+      <p>No posts yet.</p>
+    {% endfor %}
+  </div>
+</body>
+</html>

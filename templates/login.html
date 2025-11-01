@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jobify - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <header class="topbar">
+  <div class="brand-left">
+    <img src="{{ url_for('static', filename='images/makeinindia1.png') }}" 
+         alt="Make in India Logo" 
+         style="height:90px; margin-right:10px;"></div>
+
+    <h1 class="brand">JOBi-Fy / भारतीये फ्रीलांस पोर्टल</h1>
+    <p class="tag">Indian Freelancing Website<br>भारतीय फ्रीलांसिंग वेबसाइट</p>
+  </header>
+
+  <!-- 🌟 Added Scrolling News Bar -->
+  <div class="news-ticker">
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+      🔔 Latest Update: Welcome to JOBi-Fy! India’s Freelancing Revolution is Here — Share Skills, Earn, and Grow 🇮🇳
+    </marquee>
+  </div>
+
+  <div class="main-wrap">
+    <div class="welcome-card">
+      <div class="bubble">
+        <h2>WELCOME / नमस्ते!!</h2>
+        <p>INDIAN Freelancing website<br>Earn with sharing your Skills</p>
+      </div>
+    </div>
+
+    <div class="signin-card">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="flash">{{ messages[0] }}</div>
+        {% endif %}
+      {% endwith %}
+      <form action="/login" method="post" class="login-form">
+        <h3>SIGN IN / साइन इन</h3>
+        <label>USERNAME</label>
+        <input type="text" name="username" required>
+        <label>PASSWORD</label>
+        <input type="password" name="password" required>
+        <button type="submit" class="btn">SIGN IN</button>
+      </form>
+      <div class="small">New here? <a href="/register">Create account</a></div>
+    </div>
+  </div>
+</body>
+</html>
